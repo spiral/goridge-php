@@ -1,9 +1,8 @@
 .idea/
-composer.lock
 vendor/
-clover.xml
-coveralls.json
-tests/server.exe
-tests/server
-**/vendor
-vendor_php
+examples/vendor/
+
+composer.lock
+examples/composer.lock
+
+.phpunit.result.cache
