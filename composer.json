@@ -1,40 +1,55 @@
 {
-  "name": "spiral/goridge",
-  "type": "goridge",
-  "description": "High-performance PHP-to-Golang RPC bridge",
-  "license": "MIT",
-  "authors": [
-    {
-      "name": "Anton Titov / Wolfy-J",
-      "email": "wolfy.jd@gmail.com"
-    }
-  ],
-  "require": {
-    "php": ">=7.2",
-    "ext-json": "*"
-  },
-  "require-dev": {
-    "phpunit/phpunit": "~8.0",
-    "spiral/code-style": "^1.0",
-    "phpstan/phpstan": "^0.12.23"
-  },
-  "autoload": {
-    "psr-4": {
-      "Spiral\\Goridge\\": "src/"
+    "name": "spiral/goridge",
+    "type": "library",
+    "description": "Gordige IPC bridge for PHP",
+    "license": "MIT",
+    "homepage": "https://spiral.dev",
+    "support": {
+        "issues": "https://github.com/spiral/goridge-php/issues",
+        "source": "https://github.com/spiral/goridge-php"
     },
-    "files": [
-      "src/functions.php"
-    ]
-  },
-  "config": {
-    "vendor-dir": "vendor_php"
-  },
-  "scripts": {
-    "analyze": "phpstan analyze -c ./phpstan.neon.dist --no-progress --ansi"
-  },
-  "autoload-dev": {
-    "psr-4": {
-      "Spiral\\Tests\\": "tests/Cases/"
-    }
-  }
+    "authors": [
+        {
+            "name": "Anton Titov",
+            "email": "wolfy.jd@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "ext-json": "*",
+        "symfony/polyfill-php80": "^1.18"
+    },
+    "autoload": {
+        "psr-4": {
+            "Spiral\\Goridge\\": "src"
+        }
+    },
+    "require-dev": {
+        "ext-sockets": "*",
+        "vimeo/psalm": "^3.0",
+        "phpunit/phpunit": "~8.0",
+        "symfony/var-dumper": "^5.0"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Spiral\\Tests\\Goridge\\": "tests"
+        }
+    },
+    "suggest": {
+        "laminas/laminas-diactoros": "^2.0 provides implementation of PSR streams",
+        "guzzlehttp/psr7": "^1.0 provides implementation of PSR streams",
+        "amphp/amp": "^2.0 to work asynchronously using the Amp EventLoop implementation",
+        "react/event-loop": "^1.0 to work asynchronously using the ReactPHP EventLoop implementation",
+        "ext-sockets": "For working with TCP and UDP connections"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.5.x-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
