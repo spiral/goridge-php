@@ -1,7 +1,7 @@
 {
     "name": "spiral/goridge",
     "type": "library",
-    "description": "Gordige IPC bridge for PHP",
+    "description": "High-performance PHP-to-Golang RPC bridge",
     "license": "MIT",
     "homepage": "https://spiral.dev",
     "support": {
