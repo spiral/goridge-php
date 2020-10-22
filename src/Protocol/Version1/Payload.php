@@ -82,13 +82,13 @@ final class Payload
     {
         switch ($type) {
             case Type::TYPE_MESSAGE:
-                return 0;
+                return self::PAYLOAD_RAW;
 
             case Type::TYPE_ERROR:
-                return self::PAYLOAD_ERROR;
+                return self::PAYLOAD_RAW | self::PAYLOAD_ERROR;
 
             case Type::TYPE_COMMAND:
-                return self::PAYLOAD_CONTROL;
+                return self::PAYLOAD_RAW | self::PAYLOAD_CONTROL;
 
             default:
                 throw new ProtocolException(\sprintf(self::ERROR_INVALID_TYPE, $type));
