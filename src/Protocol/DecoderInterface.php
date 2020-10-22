@@ -11,7 +11,7 @@ declare(strict_types=1);
 
 namespace Spiral\Goridge\Protocol;
 
-use Spiral\Goridge\Protocol\Stream\FactoryInterface;
+use Spiral\Goridge\Stream\FactoryInterface;
 
 interface DecoderInterface
 {

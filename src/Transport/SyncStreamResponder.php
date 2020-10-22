@@ -12,8 +12,8 @@ declare(strict_types=1);
 namespace Spiral\Goridge\Transport;
 
 use Spiral\Goridge\Exception\ProtocolException;
-use Spiral\Goridge\Protocol\Stream\ReadableStreamInterface;
 use Spiral\Goridge\Protocol\Type;
+use Spiral\Goridge\Stream\ReadableStreamInterface;
 
 class SyncStreamResponder extends StreamResponder
 {

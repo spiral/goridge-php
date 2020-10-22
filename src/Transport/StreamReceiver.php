@@ -12,8 +12,8 @@ declare(strict_types=1);
 namespace Spiral\Goridge\Transport;
 
 use Spiral\Goridge\Protocol\DecoderInterface;
-use Spiral\Goridge\Protocol\Stream\FactoryInterface;
-use Spiral\Goridge\Protocol\Stream\Stream;
+use Spiral\Goridge\Stream\FactoryInterface;
+use Spiral\Goridge\Stream\Stream;
 use Spiral\Goridge\Transport\Receiver\ResourceStreamReceiverTrait;
 
 abstract class StreamReceiver extends Receiver

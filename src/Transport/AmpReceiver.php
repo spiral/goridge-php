@@ -13,7 +13,7 @@ namespace Spiral\Goridge\Transport;
 
 use Amp\Loop;
 use Spiral\Goridge\Protocol\DecoderInterface;
-use Spiral\Goridge\Protocol\Stream\FactoryInterface;
+use Spiral\Goridge\Stream\FactoryInterface;
 
 class AmpReceiver extends StreamReceiver
 {

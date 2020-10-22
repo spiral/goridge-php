@@ -12,8 +12,8 @@ declare(strict_types=1);
 namespace Spiral\Goridge\Transport;
 
 use Spiral\Goridge\Protocol\DecoderInterface;
-use Spiral\Goridge\Protocol\Stream\Factory;
-use Spiral\Goridge\Protocol\Stream\FactoryInterface;
+use Spiral\Goridge\Stream\Factory;
+use Spiral\Goridge\Stream\FactoryInterface;
 use Spiral\Goridge\Transport\Receiver\ReceiverTrait;
 
 abstract class Receiver implements ReceiverInterface

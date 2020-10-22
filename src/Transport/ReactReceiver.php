@@ -13,7 +13,7 @@ namespace Spiral\Goridge\Transport;
 
 use React\EventLoop\LoopInterface;
 use Spiral\Goridge\Protocol\DecoderInterface;
-use Spiral\Goridge\Protocol\Stream\FactoryInterface;
+use Spiral\Goridge\Stream\FactoryInterface;
 
 class ReactReceiver extends StreamReceiver
 {

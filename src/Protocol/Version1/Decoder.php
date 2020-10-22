@@ -13,7 +13,7 @@ namespace Spiral\Goridge\Protocol\Version1;
 
 use Spiral\Goridge\Exception\ProtocolException;
 use Spiral\Goridge\Protocol\Decoder as BaseDecoder;
-use Spiral\Goridge\Protocol\Stream\FactoryInterface;
+use Spiral\Goridge\Stream\FactoryInterface;
 
 final class Decoder extends BaseDecoder
 {

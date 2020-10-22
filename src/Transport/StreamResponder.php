@@ -12,7 +12,7 @@ declare(strict_types=1);
 namespace Spiral\Goridge\Transport;
 
 use Spiral\Goridge\Protocol\EncoderInterface;
-use Spiral\Goridge\Protocol\Stream\Stream;
+use Spiral\Goridge\Stream\Stream;
 
 abstract class StreamResponder extends Responder
 {

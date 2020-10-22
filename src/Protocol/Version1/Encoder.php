@@ -11,11 +11,10 @@ declare(strict_types=1);
 
 namespace Spiral\Goridge\Protocol\Version1;
 
-use Psr\Http\Message\StreamInterface;
 use Spiral\Goridge\Exception\ProtocolException;
 use Spiral\Goridge\Protocol\Encoder as BaseEncoder;
-use Spiral\Goridge\Protocol\Stream\ReadableStreamInterface;
 use Spiral\Goridge\Protocol\Type;
+use Spiral\Goridge\Stream\ReadableStreamInterface;
 
 final class Encoder extends BaseEncoder
 {

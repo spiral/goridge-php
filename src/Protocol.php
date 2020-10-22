@@ -14,11 +14,11 @@ namespace Spiral\Goridge;
 use Spiral\Goridge\Exception\ProtocolException;
 use Spiral\Goridge\Protocol\DecoderInterface;
 use Spiral\Goridge\Protocol\EncoderInterface;
-use Spiral\Goridge\Protocol\Stream\FactoryInterface;
 use Spiral\Goridge\Protocol\Type;
 use Spiral\Goridge\Protocol\Version;
 use Spiral\Goridge\Protocol\Version1\Decoder;
 use Spiral\Goridge\Protocol\Version1\Encoder;
+use Spiral\Goridge\Stream\FactoryInterface;
 
 /**
  * Communicates with remote server/client using byte payload

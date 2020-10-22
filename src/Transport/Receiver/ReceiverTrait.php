@@ -12,8 +12,8 @@ declare(strict_types=1);
 namespace Spiral\Goridge\Transport\Receiver;
 
 use Spiral\Goridge\Exception\TransportException;
-use Spiral\Goridge\Protocol\Stream\ReadableStreamInterface;
 use Spiral\Goridge\Protocol\Type;
+use Spiral\Goridge\Stream\ReadableStreamInterface;
 use Spiral\Goridge\Transport\ReceiverInterface;
 
 /**

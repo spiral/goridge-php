@@ -11,8 +11,8 @@ declare(strict_types=1);
 
 namespace Spiral\Goridge\Transport;
 
-use Spiral\Goridge\Protocol\Stream\ReadableStreamInterface;
 use Spiral\Goridge\Protocol\Type;
+use Spiral\Goridge\Stream\ReadableStreamInterface;
 
 interface ResponderInterface
 {

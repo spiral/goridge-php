@@ -11,7 +11,7 @@ declare(strict_types=1);
 
 namespace Spiral\Goridge\Protocol;
 
-use Spiral\Goridge\Protocol\Stream\ReadableStreamInterface;
+use Spiral\Goridge\Stream\ReadableStreamInterface;
 
 interface EncoderInterface
 {

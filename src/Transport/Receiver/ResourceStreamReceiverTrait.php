@@ -12,7 +12,7 @@ declare(strict_types=1);
 namespace Spiral\Goridge\Transport\Receiver;
 
 use Spiral\Goridge\Protocol\DecoderInterface;
-use Spiral\Goridge\Protocol\Stream\FactoryInterface;
+use Spiral\Goridge\Stream\FactoryInterface;
 
 trait ResourceStreamReceiverTrait
 {

@@ -12,7 +12,7 @@ declare(strict_types=1);
 namespace Spiral\Goridge\Protocol;
 
 use Spiral\Goridge\Exception\ProtocolException;
-use Spiral\Goridge\Protocol\Stream\ReadableStreamInterface;
+use Spiral\Goridge\Stream\ReadableStreamInterface;
 
 abstract class Encoder extends Protocol implements EncoderInterface
 {

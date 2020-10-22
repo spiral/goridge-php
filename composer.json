@@ -15,7 +15,7 @@
         }
     ],
     "require": {
-        "php": "^7.4|^8.0",
+        "php": "^7.2",
         "ext-json": "*",
         "symfony/polyfill-php80": "^1.18"
     },
@@ -26,6 +26,8 @@
     },
     "require-dev": {
         "ext-sockets": "*",
+        "psr/http-message": "^1.0",
+        "guzzlehttp/psr7": "^1.7",
         "vimeo/psalm": "^3.0",
         "phpunit/phpunit": "~8.0",
         "symfony/var-dumper": "^5.0"
