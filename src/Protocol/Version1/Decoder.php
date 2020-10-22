@@ -42,7 +42,7 @@ final class Decoder extends BaseDecoder
         /**
          * Initialize new buffer
          */
-        $buffer = $factory->create($size + Payload::HEADER_SIZE, $this->chunkSize);
+        $buffer = $factory->create($size + Payload::HEADER_SIZE);
 
         /**
          * Write stream to buffer
